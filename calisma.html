@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>İLK HTML ÇALIŞMAM: Ders Notlarım </h1>
+    <p>VsCode html ile başlayıp yine html ile biter. 
+        içerisinde head ve body elementleri vardır. her tag ın 
+        bir başlangıç ve bitişi vardır istisnalar hari
+        head elemnti içindekiler sayfada gözükmez bu elementte 
+        sayfa içindekiler ilgili önbilgiler vardır. 
+        title tagı head içinde bulunur. Pencerenin üztündeki 
+        başlıktır. Body beyaz sayfa içerisindeki herşeyi kapsar.
+    </p>
+        <br>
+<h2> <b> Bazı Önemli Taglar</b></h2>
+        <p> 
+            p paragraf tagıdır. <br>
+            h1 başlık tagıdır h6 ya kadar hiyerarşik
+                sıralama ile gider <br>
+            <b> b bold yazmak için kullanılır</b> <br>
+            <em> em italik yazı tagıdır</em> <br>
+            <i> i  tagı da italik yazı tagıdır</i> <br>
+            br break  boşluk bırakmak için kullanılır <br>
+            <u> u underline altını çizmek için </u>
+
+            </p>
+<br>
+<h2> <b>  İç içe Taglar </b></h2>
+    <p>
+        Önce açılan tag sonra kapanır <br>
+        Taglar kesişmemelidir. <br> <br>
+        !-- p <br>
+            b  Selam /b <br>
+            u Dünya /u <br>
+            /p
+            <br>
+            DOĞRU
+            <br>
+            p <br>
+            b  Selam /b <br>
+            u Dünya /p <br>
+            /u <br>
+            HATALI : kesişim var
+                                    --!
+
+    </p>
+    <br>
+    <p>
+        <h4>Önemli Not:</h4> 
+        html Error vermez. Çünkü bir program değil
+        bir işaretleme dilidir. Bir tarayıcıda çalışıyor
+        gibi gözüksede başka bir trayıcıda çalışmayabilir.
+    </p>
+<br>
+
+<h2>Liste tagı</h2> 
+<h3>Ordered Sıralı list</h3> 
+<p>
+1, 2 ,3 veya a, b, c gibi sıralı listeler için kullanılır. <br>
+ol ve li tagları ile yapılır <br>
+ol > li*3 bir kısayoldur. <br>
+ Anlamı 3 elemanlı ordered listedir. <br>
+ <h6>Örnek</h6> 
+  <ol>
+     <li>Ocak</li>
+     <li>Şubat</li>
+     <li>Mart</li>
+ </ol>
+</p>
+
+<h3>Unordered Sırasız Liste</h3>
+<p>Sırasız listeler için kullanılır. <br>
+    ul ve li tagları ile yapılır <br>
+    ul > li*2 > ol>li*3 bir kısayoldur. <br>
+     Anlamı 2 elemanlı un ordered listenin altında 3 er elemanlı 
+     ordered listeler vardir. <br>
+ <ul>
+     <li> Yaz Ayları
+         <ol>
+             <li>Haziran</li>
+             <li>TEmmuz</li>
+             <li>Ağustos</li>
+         </ol>
+     </li>
+     <li> Kış Ayları
+         <ol>
+             <li>Aralık</li>
+             <li>Ocak</li>
+             <li>Şubat</li>
+         </ol>
+     </li>
+ </ul>
+</p>
+
+
+<h3> a link/ bağlantı tagı</h3> 
+        <p>Bir sayfadan başka bir sayfaya, başka bir siteye 
+        gitmek için kullanlır. <br>
+        a href= "03-head.html" > Tıkla < /a> <br>
+        şeklinde yazılır. Çift tırank içerisi gidilecek yeri Tıkla
+        yazısı ise aktif olan tıklanacak yeri gösterir. <br>
+        <h6>Örnek</h6>
+        a href="03-head.html">Head dosyasına buradan ulabilirsiniz /a> <br> <br>
+         <a href="03-head.html">Head dosyasına buradan ulabilirsiniz</a>
+        <br> <br> <br>
+         Bir siteye bağlantı kurmak için adresi tamamıyla yazmalısınız. <br> 
+         <h6>Örnek</h6>
+         a href="https://google.com.tr">Google a git /a> <br> <br>
+         <a href="https://google.com.tr">Google a git</a> <br>
+
+<h3>img Resim Ekleme Tagı</h3>
+
+    jpg, png ya da svg uzantılı fotoları bu tag ile ekleyebilirsiniz <br>
+
+        <h5>Önemli Uyarı</h5>
+            Bu işlem için VsCode içinde bir img klasörü açılıp 
+            fotoları bu klasöre önceden atmak gerekir. 
+            Sürükle bırak ile atılabilir.
+            <br>
+            <br>
+            <h5>Örnek</h5>
+            img src="img/pexels-luis-del-río-15286.jpg" width="250"> <br> <br>
+            <img src="img/pexels-luis-del-río-15286.jpg" width="250"> <br> <br>
+
+<h3> table Tablolama tagı</h3>
+        tr Table row yani SATIR <br>
+        th Table head yani BAŞLIK <br>
+        td Table Data yani  Hücre DATA sı taglarıdır. <br>
+<h6>Örnek</h6>
+3 satır ve 3 sütundan oluşan bir tablo için: <br>
+
+table> <br>
+    tr> <br>
+        th>SıraNo/th> <br>
+        th>ÖğrenciAdı/th> <br>
+        th>Puan</th>
+    /tr> <br> <br>
+    tr> <br>
+        td>1/td> <br>
+        td>Ahmet/td> <br>
+        td>95/td> <br>
+        /tr> <br> <br>
+    tr> <br>
+        td>2/td> <br>
+        td>Ali/td> <br>
+        td>80/td> <br>
+    /tr> <br>
+    
+    /table> <br> <br>
+
+<table>
+<tr>
+    <th>SıraNo</th>
+    <th>ÖğrenciAdı</th>
+    <th>Puan</th>
+</tr>
+<tr>
+    <td>1</td>
+    <td>Ahmet</td>
+    <td>95</td>
+    </tr>
+<tr>
+    <td>2</td>
+    <td>Ali</td>
+    <td>80</td>
+</tr>
+
+</table>
+
+
+
+    
+    </p>
+</body>
+</html>
